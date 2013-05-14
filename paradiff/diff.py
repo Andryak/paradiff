@@ -1,7 +1,8 @@
 """
 Provides functions to get the delta of two XML documents.
 
-Copyright 2013 Andrea Aquino
+Copyright (C) 2013 Andrea Aquino <andrex.aquino@gmail.com>
+Contributors: Justin Poliey <justin.d.poliey@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

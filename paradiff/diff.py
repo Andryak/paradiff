@@ -137,7 +137,7 @@ def delta(start, goal, F, heuristic, debug=False):
 		# of diffing functions is returned.
 		if current.getValue() == serialized_goal:
 			if debug:
-				print("expdiff completed.")
+				print("expdiff complete.")
 				
 			path = []
 			while current.getParent():

@@ -70,15 +70,14 @@ F = [
 ]
 
 # The delta between the input documents is calculated.
-delta = diff.delta(doc1, doc2, F, heuristic, debug=True)
+delta = diff.delta(doc1, doc2, F, heuristic, debug=False)
 
 # If a delta is retrieved, it is printed out.
 if delta is not None:
 	current = doc1
 	for f, value, position in delta:
 		result = f(value, position, current)
-		args = "{0}, {1}, {2}".format(value, position, etree.tostring(current))
-		row = "{0}({1}) = {2}".format(f.__name__, args, etree.tostring(result))
+		row = "{0}({1},{2})".format(f.__name__, value, position)		
 		print(row)
 		current = result
 else:
